@@ -122,3 +122,25 @@ mais_frutas = ["carambola", "pera", "acerola", "jabuticaba", "caqui"]
 frutas.extend(mais_frutas)
 print("Lista de frutas estendida com mais frutas:")
 print(frutas)
+
+print("-" * 80)     # Traço separador
+
+# 8) FATIANDO UMA LISTA
+#    Fatiar significa uma parte de uma lista (sublista),
+#    criando uma nova lista
+
+# Cria uma nova lista com os elementos das posições de 2 a 5
+# (POSIÇÃO 6 *NÃO ENTRA* NA NOVA LISTA)
+sublista2a5 = frutas[2:6]
+print("Sublista com as posições de 2 a 5:", sublista2a5)
+
+# Cria uma nova lista com todos os elementos do início até
+# a posição 6
+# (POSIÇÃO 7 *NÃO ENTRA* NA NOVA LISTA)
+sublista_ate6 = frutas[:7]
+print("Sublista com as posições do início até a 6:", sublista_ate6)
+
+# Cria uma nova sublista com todos os elementos da posição
+# 5 até o final da lista
+sublista_desde5 = frutas[5:]
+print("Sublista da posição 5 até o final:", sublista_desde5)
