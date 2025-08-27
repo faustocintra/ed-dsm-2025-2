@@ -15,6 +15,8 @@ def bubble_sort(lista):
     passd = comps = trocas = 0
 
     while True:
+        if passd % 50 == 0: print(f"Processando passada: {passd}")
+
         passd += 1      # Começa nova passada
 
         # Variável que controla se houve trocas na passada
@@ -64,12 +66,12 @@ sys.dont_write_bytecode = True      # Impede a criação do cache
 # TESTE COM A LISTA DE NOMES
 from data.nomes_desord import nomes
 
+# Trabalhando apenas com os primeiros 10000 nomes
+nomes = nomes[:100000]
+
 hora_ini = time()
 bubble_sort(nomes)
 hora_fim = time()
-
-# Trabalhando apenas com os primeiros 10000 nomes
-nomes = nomes[:10000]
 
 print(nomes)
 
