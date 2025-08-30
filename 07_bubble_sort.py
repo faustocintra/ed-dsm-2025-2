@@ -43,13 +43,18 @@ def bubble_sort(lista):
 ######################################################################
 
 # Caso médio
-# nums = [7, 0, 6, 8, 1, 3, 9, 4, 2, 5]
+nums = [7, 0, 6, 8, 1, 3, 9, 4, 2, 5]
+# Passadas: 9; comparações: 45; trocas: 8
 
 # Pior caso
 # nums = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+# Passadas: 10; comparações: 90; trocas: 45
 
 # Melhor caso
-nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+#nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Passadas: 1; comparações: 9; trocas: 0
+
+
 
 print("ANTES :", nums)
 bubble_sort(nums)
