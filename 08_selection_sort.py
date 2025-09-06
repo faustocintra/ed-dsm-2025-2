@@ -63,3 +63,23 @@ print("ANTES :", nums)
 selection_sort(nums)
 print("DEPOIS:", nums)
 print(f"Passadas: {passd}; comparações: {comps}; trocas: {trocas}")
+
+from time import time
+
+import sys
+sys.dont_write_bytecode = True      # Impede a criação do cache
+
+# TESTE COM A LISTA DE NOMES
+from data.nomes_desord import nomes
+
+# Trabalhando apenas com os primeiros 10000 nomes
+nomes = nomes[:100000]
+
+hora_ini = time()
+selection_sort(nomes)
+hora_fim = time()
+
+print(nomes)
+
+print(f"Passadas: {passd}; comparações: {comps}; trocas: {trocas}")
+print(f"Tempo gasto: {(hora_fim - hora_ini) * 1000}ms.\n")

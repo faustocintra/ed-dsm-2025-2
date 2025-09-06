@@ -54,8 +54,6 @@ nums = [7, 0, 6, 8, 1, 3, 9, 4, 2, 5]
 #nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Passadas: 1; comparações: 9; trocas: 0
 
-
-
 print("ANTES :", nums)
 bubble_sort(nums)
 print("DEPOIS:", nums)
