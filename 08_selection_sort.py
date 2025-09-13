@@ -48,7 +48,7 @@ def selection_sort(lista):
 ###########################################################################
 
 # Caso médio
-#nums = [7, 0, 6, 8, 1, 3, 9, 4, 2, 5]
+nums = [7, 0, 6, 8, 1, 3, 9, 4, 2, 5]
 # Passadas: 9; comparações: 45; trocas: 8
 
 # Melhor caso
@@ -56,7 +56,7 @@ def selection_sort(lista):
 # Passadas: 9; comparações: 45; trocas: 0
 
 # Pior caso
-nums = [9, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+# nums = [9, 0, 1, 2, 3, 4, 5, 6, 7, 8]
 # Passadas: 9; comparações: 45; trocas: 9
 
 print("ANTES :", nums)
