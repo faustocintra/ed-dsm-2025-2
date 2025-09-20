@@ -58,6 +58,20 @@ forma3 = {
     "tipo": "E"     # Elipse/círculo
 }
 
+# Valor de propriedade fora do tipo esperado
+# forma4 = {
+#     "base": "batata",
+#     "altura": 14,
+#     "tipo": "T"
+# }
+
+# Nome de propriedade inválido para a função calc_area()
+forma4 = {
+    "base": 20,
+    "legume": 12,
+    "tipo": "E"
+}
+
 from math import pi
 
 def calc_area(forma):
@@ -80,7 +94,7 @@ def calc_area(forma):
 
 # Testes com a função calc_area()
 
-formas = [forma1, forma2, forma3]
+formas = [forma1, forma2, forma3, forma4]
 
 for forma in formas:
     print(f"Base: {forma["base"]}; altura: {forma["altura"]}; tipo: {forma["tipo"]}; área: {calc_area(forma)}")
